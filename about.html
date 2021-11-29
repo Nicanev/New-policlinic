@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Запись к врачу</title>
+    <title>О нас</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,51 +32,39 @@
             </div>
         </div>
         <main class="main">
-            <div class="appointment">
-                <div class="container">
-                    <div class="appointment__content">
-                    <div class="appointment__block">
-                        <div class="appointment__container">
-                            <div class="appointment__title">
-                                Записаться к врачу
-                            </div>
-                            <div class="appointment__result" id="result">
-                                Результат
-                            </div>
-                            <div class="appointment__inputs" id="block">
-                                <div class="appointment__input">
-                                    <select name="" id="select">
-                                        <option value="1">Выберите нужного специалиста</option>
-                                        <option value="Стоматолог">Стоматолог</option>
-                                        <option value="Окулист">Окулист</option>
-                                    </select>
-                                </div>
-                                <div class="appointment__input">
-                                    <input type="text" id="tel" name="" placeholder="Укажите номер телефона">
-                                </div>
-                                <div class="appointment__input" >
-                                    <input type="text" name="" id="med" placeholder="Укажите номер ОМС">
-                                </div>
-                                <div class="appointment__input" >
-                                    <input type="date" name="" id="date" placeholder="Дата записи">
-                                </div>
-                                <div class="appointment__input" >
-                                    <select id="time">
-                                        <option value="1">Время</option>
-                                        <option value="12:00">12:00</option>
-                                        <option value="16:00">16:00</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="appointment__btn" id="button">
-                                <button onclick="getValue()">Подтвердить</button>
-                               
-                            </div>
+            <div class="aboutUs">
+                <div class="aboutUs__background"></div>
+                <div class="aboutUs__benefit">
+                    <div class="container">
+                    <div class="aboutUs__blocks">
+                        <div class="aboutUs__block">
+                        <div class="aboutUs__title">За это время к нам обратилось более </div>
+                        <div class="aboutUs__num">
+                            50 000
                         </div>
+                        <div class="aboutUs__subtitle">пациентов</div>
+                    </div>
+                    <div class="aboutUs__block">
+                        <div class="aboutUs__title">Услуг предоставленных онлайн</div>
+                        <div class="aboutUs__num">
+                            25 000
                         </div>
+                        <div class="aboutUs__subtitle">заявок</div>
+                    </div>
+                    <div class="aboutUs__block">
+                        <div class="aboutUs__title">Оказываем услуги по более чем</div>
+                        <div class="aboutUs__num">
+                            20
+                        </div>
+                        <div class="aboutUs__subtitle">направлениям</div>
+                    </div>
                     </div>
                 </div>
             </div>
+            <div class="aboutUs__about">Мы считаем, что современные технологии — это необходимый<br> инструмент, который позволяет нашей организации стать такой,<br> какой она хочет быть. Наша цель состоит в том, чтобы принести<br> пользу пациентам и решать их насущные проблемы.</div>
+            </div>
+            <div class="aboutUs__btn">
+            <a href="index.html#services"><button>Ознакомиться с услугами</button></a></div>
         </main>
         <foooter class="footer">
             <div class="container">
@@ -128,6 +116,5 @@
         </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
 </body>
 </html>

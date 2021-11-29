@@ -220,7 +220,10 @@ body {
     &__blocks {
         margin-top: 100px;
         display: flex;
-        
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__block {
@@ -229,7 +232,10 @@ body {
         width: 291px;
         height: 270px;
         margin-left: 30px;
-        transition: .2s all; 
+        transition: .2s all;
+        @media screen and (max-width: 768px) {
+            margin-top: 20px;
+        }
     }
     &__block:hover {
         background: white;
@@ -307,9 +313,15 @@ body {
         height: 170px;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
         border-radius: 9px;
+        transition: .2s all;
+        cursor: pointer;
         @media screen and (max-width: 768px) {
             margin-top: 20px;
         }
+    }
+    &__card:hover {
+        background: rgba(48, 218, 255, 0.4);
+        transition: .2s all;
     }
     
 }
@@ -388,6 +400,10 @@ body {
     &__block {
         display: flex;
         justify-content: space-around;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            
+        }
     }
 
     &__image {
@@ -420,10 +436,18 @@ body {
 .footer {
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     padding-bottom: 120px;
+    @media screen and (max-width: 768px) {
+        margin-top: 200px;
+        
+    }
     &__content {
         display: flex;
         margin-top: 100px;
         justify-content: space-around;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            
+        }
     }
 
     &__logo {
@@ -519,8 +543,9 @@ body {
         margin: 0 auto;
         background: rgba(255, 255, 255, 0.5);
         width: 500px;
-        height: 380px;
+        height: 360px;
         backdrop-filter: blur(9px);
+        border-radius: 2px;
         
     }
 
@@ -605,3 +630,84 @@ body {
     }
 }
 
+.call {
+    height: 400px;
+}
+
+.aboutUs {
+
+    &__background {
+        background-image: url(../img/background3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+
+    &__benefit {
+        width: 100%;
+        height: 195px;
+        background: #EBF0FF;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__block {
+        width: 280px;
+        padding-top: 18px;
+        
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 16px;
+        color: #9F9EA8;
+        margin-bottom: 18px;
+    }
+
+    &__num {
+        text-align: center;
+        font-size: 45px;
+        color: #3D3467;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: #3D3467;
+        font-weight: bold;
+    }
+    &__about {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+    }
+
+    &__btn {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        button {
+            border: 1px solid #28A9F1;
+            border-radius: 3px;
+            width: 316px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #28A9F1;
+            background: white;
+            cursor: pointer;
+            transition: .2s all;
+        }
+        button:hover {
+            background:#28A9F1;
+            color: white;
+            transition: .2s all;
+        }
+    }
+}

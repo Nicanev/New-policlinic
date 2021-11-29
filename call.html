@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Запись к врачу</title>
+    <title>Вызов врача</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,10 +35,10 @@
             <div class="appointment">
                 <div class="container">
                     <div class="appointment__content">
-                    <div class="appointment__block">
+                    <div class="appointment__block call">
                         <div class="appointment__container">
                             <div class="appointment__title">
-                                Записаться к врачу
+                                Вызвать врача
                             </div>
                             <div class="appointment__result" id="result">
                                 Результат
@@ -52,24 +52,23 @@
                                     </select>
                                 </div>
                                 <div class="appointment__input">
-                                    <input type="text" id="tel" name="" placeholder="Укажите номер телефона">
+                                    <input type="text" id="adress" name="" placeholder="Укажите ваш адрес">
+                                </div>
+                                <div class="appointment__input" >
+                                    <input type="text" name="" id="tel" placeholder="Укажите номер телефона">
                                 </div>
                                 <div class="appointment__input" >
                                     <input type="text" name="" id="med" placeholder="Укажите номер ОМС">
                                 </div>
                                 <div class="appointment__input" >
-                                    <input type="date" name="" id="date" placeholder="Дата записи">
+                                    <input type="text" name="" id="temp" placeholder="Укажите температуру на текущий момент">
                                 </div>
                                 <div class="appointment__input" >
-                                    <select id="time">
-                                        <option value="1">Время</option>
-                                        <option value="12:00">12:00</option>
-                                        <option value="16:00">16:00</option>
-                                    </select>
+                                    <input type="text" name="" id="complaints" placeholder="Укажите на что жалобы">
                                 </div>
                             </div>
                             <div class="appointment__btn" id="button">
-                                <button onclick="getValue()">Подтвердить</button>
+                                <button onclick="getValueCall()">Подтвердить</button>
                                
                             </div>
                         </div>
