@@ -1,317 +1,337 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Новая поликлиника</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="header">
-            <div class="container">
-                <div class="header__menu">
-                    <div class="header__logo">
-                        <a href="index.html"><img src="img/Logo.svg" alt=""></a>
-                    </div>
-                    <div class="header__nav">
-                        <nav class="nav">
-                            <ul class="nav__links">
-                                <li><a href="index.html#services">Услуги</a></li>
-                                <li><a href="about.html">О нас</a></li>
-                                <li><a href="#">Расписание</a></li>
-                            </ul>
-                            <div class="nav__btn">
-                                <a href="appointment.html">Записаться</a>
-                                <a href="call.html"><button>Вызвать врача</button></a>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+      <div class="header">
+        <div class="container">
+          <div class="header__menu">
+            <div class="header__logo">
+              <a href="index.html"><img src="img/Logo.svg" alt="" /></a>
             </div>
+            <div class="header__nav">
+              <nav class="nav">
+                <ul class="nav__links">
+                  <li><a href="index.html#services">Услуги</a></li>
+                  <li><a href="about.html">О нас</a></li>
+                  <li><a href="#">Расписание</a></li>
+                </ul>
+                <div class="nav__btn">
+                  <a href="appointment.html">Записаться</a>
+                  <a href="call.html"><button>Вызвать врача</button></a>
+                </div>
+              </nav>
+            </div>
+          </div>
         </div>
-        <main class="main">
-            <div class="preview">
-                    <div class="container">
-                        <div class="preview__content">
-                            <div class="preview__block">
-                                <div class="block__content">
-                                    <div class="block__title">
-                                        Записаться к врачу
-                                    </div>
-                                    <div class="appointment__result" id="result"></div>
-                                    <div class="block__inputs" id="block">
-                                    <div class="block__input">
-                                        <select id = "select">
-                                            <option value="1">Выберите специалиста</option>
-                                            <option value="Стоматолог">Стоматолог</option>
-                                            <option value="Невролог">Невролог</option>
-                                        </select>
-                                    </div>
-                                    <div class="block__input">
-                                        <input type="text" name="" id="tel" placeholder="Укажите номер телефона">
-                                    </div>
-                                    <div class="block__input">
-                                        <input type="text" name="" id="med" placeholder="Укажите номер ОМС">
-                                    </div>
-                                    <div class="block__input">
-                                        <input type="date" name="" id="date" placeholder="Дата записи">
-                                    </div>
-                                    <div class="block__input">
-                                        <select id="time">
-                                            <option value="1">Время</option>
-                                            <option value="12:00">12:00</option>
-                                            <option value="16:00">16:00</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="block__btn" id="button">
-                                    <button onclick="getValue()">Записаться</button>
-                                    <a href="call.html">Вызвать врача</a>
-                                </div>
-                                </div>
-                                
-                            </div>
-                        
+      </div>
+      <main class="main">
+        <div class="preview">
+          <div class="container">
+            <div class="preview__content">
+              <div class="preview__block">
+                <div class="block__content">
+                  <div class="block__title">Записаться к врачу</div>
+                  <div class="appointment__result" id="result"></div>
+                  <div class="block__inputs" id="block">
+                    <div class="block__input">
+                      <select id="select">
+                        <option value="1">Выберите специалиста</option>
+                        <option value="Стоматолог">Стоматолог</option>
+                        <option value="Невролог">Невролог</option>
+                      </select>
                     </div>
+                    <div class="block__input">
+                      <input
+                        type="text"
+                        name=""
+                        id="tel"
+                        placeholder="Укажите номер телефона"
+                      />
+                    </div>
+                    <div class="block__input">
+                      <input
+                        type="text"
+                        name=""
+                        id="med"
+                        placeholder="Укажите номер ОМС"
+                      />
+                    </div>
+                    <div class="block__input">
+                      <input
+                        type="date"
+                        name=""
+                        id="date"
+                        placeholder="Дата записи"
+                      />
+                    </div>
+                    <div class="block__input">
+                      <select id="time">
+                        <option value="1">Время</option>
+                        <option value="12:00">12:00</option>
+                        <option value="16:00">16:00</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="block__btn" id="button">
+                    <button onclick="getValue()">Записаться</button>
+                    <a href="call.html">Вызвать врача</a>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="about">
-                <div class="container">
-                    <div class="about__content">
-                        <div class="about__title">
-                            Почему вы должны доверять нам?<br>
-                            Узнайте больше о нас
-                        </div>
-                        <div class="about__blocks">
-                        <div class="about__block">
-                            <div class="blockAbout">
-                                <div class="blockAbout__image">
-                                    <img src="img/doctor.svg" alt="">
-                                </div>
-                                <div class="blockAbout__title">Консультации специалистов</div>
-                                <div class="blockAbout__subtitle">
-                                    У нас более 1000 врачей, которые,<br> имееют более 50 специальностей
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about__block">
-                            <div class="blockAbout">
-                                <div class="blockAbout__image">
-                                    <img src="img/medicial.svg" alt="">
-                                </div>
-                                <div class="blockAbout__title">Современное оборудование</div>
-                                <div class="blockAbout__subtitle">
-                                    Наша поликлиника имеет современное<br> оборудование для диагностики и<br> лечения
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about__block">
-                            <div class="blockAbout">
-                                <div class="blockAbout__image">
-                                    <img src="img/pay.svg" alt="">
-                                </div>
-                                <div class="blockAbout__title">Любой способ оплаты</div>
-                                <div class="blockAbout__subtitle">
-                                    У нас вы можете оплатить услуги<br> любым способом, будь то картой,<br> наличкой и даже криптовалютой
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about__block">
-                            <div class="blockAbout">
-                                <div class="blockAbout__image">
-                                    <img src="img/customers.svg" alt="">
-                                </div>
-                                <div class="blockAbout__title">Тысячи клиентов</div>
-                                <div class="blockAbout__subtitle">
-                                    Нашей поликлинике доверяет более<br> тысячи человек со всей страны
-                                </div>
-                            </div>
-                        </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="container">
+            <div class="about__content">
+              <div class="about__title">
+                Почему вы должны доверять нам?<br />
+                Узнайте больше о нас
+              </div>
+              <div class="about__blocks">
+                <div class="about__block">
+                  <div class="blockAbout">
+                    <div class="blockAbout__image">
+                      <img src="img/doctor.svg" alt="" />
                     </div>
+                    <div class="blockAbout__title">
+                      Консультации специалистов
                     </div>
+                    <div class="blockAbout__subtitle">
+                      У нас более 1000 врачей, которые,<br />
+                      имееют более 50 специальностей
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="services" id="services">
-                <div class="container">
-                    <div class="services__content">
-                        <div class="services__title">
-                            Наши услуги
-                        </div>
-                        <div class="services__subtitle">
-                            Вы можете проконсультироваться с врачом<br> онлайн или же записаться на приём
-                        </div>
-                        <div class="services__cards">
-                            <div class="services__card">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <img src="img/neurology.svg" alt="">
-                                    </div>
-                                    <div class="card__title">Невролог</div>
-                                </div>
-                            </div>
-                            <div class="services__card">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <img src="img/dernatology.svg" alt="">
-                                    </div>
-                                    <div class="card__title">Дерматолог</div>
-                                </div>
-                            </div>
-                            <div class="services__card">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <img src="img/dantist.svg" alt="">
-                                    </div>
-                                    <div class="card__title">Стоматолог</div>
-                                </div>
-                            </div>
-                            <div class="services__card">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <img src="img/urolog.svg" alt="">
-                                    </div>
-                                    <div class="card__title">Уролог</div>
-                                </div>
-                            </div>
-                            <div class="services__card">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <img src="img/oculist.svg" alt="">
-                                    </div>
-                                    <div class="card__title">Окулист</div>
-                                </div>
-                            </div>
-                            <div class="services__card">
-                                <div class="card">
-                                    <div class="card__img">
-                                        <img src="img/Allergy.svg" alt="">
-                                    </div>
-                                    <div class="card__title">Аллерголог</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="about__block">
+                  <div class="blockAbout">
+                    <div class="blockAbout__image">
+                      <img src="img/medicial.svg" alt="" />
                     </div>
+                    <div class="blockAbout__title">
+                      Современное оборудование
+                    </div>
+                    <div class="blockAbout__subtitle">
+                      Наша поликлиника имеет современное<br />
+                      оборудование для диагностики и<br />
+                      лечения
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="goal">
-                <div class="container">
-                    <div class="goal__content">
-                        <div class="goal__block">
-                        <div class="goal__image">
-                            <img src="img/company.png" alt="">
-                        </div>
-                        <div class="goal__text">
-                            <div class="goal__title">
-                                Наша цель в том чтобы сделать<br>
-                                медицину современной и удобной
-                            </div>
-                            <div class="goal__subtitle">
-                                Наша поликлиника имеет иновационные способы записи к<br>
-                                врачу и вызова врача на дом онлайн. Мы также<br>
-                                предоставляем возможность консультации с врачом по<br>
-                                видео звонку.
-                            </div>
-                        </div>
+                <div class="about__block">
+                  <div class="blockAbout">
+                    <div class="blockAbout__image">
+                      <img src="img/pay.svg" alt="" />
                     </div>
-                    <div class="goal__block">
-                        
-                        <div class="goal__text">
-                            <div class="goal__title">
-                                Ценим каждого больного!
-                            </div>
-                            <div class="goal__subtitle">
-                                Определяющим принципом работы сотрудников Новой<br>
-                                поликлиники всегда был и остается высочайший<br>
-                                профессионализм и индивидуальный подход к каждому
-                                <br>пациенту.
-                            </div>
-                        </div>
-                        <div class="goal__image">
-                            <img src="img/Company 2.png" alt="">
-                        </div>
+                    <div class="blockAbout__title">Любой способ оплаты</div>
+                    <div class="blockAbout__subtitle">
+                      У нас вы можете оплатить услуги<br />
+                      любым способом, будь то картой,<br />
+                      наличкой и даже криптовалютой
                     </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="comment">
-                <div class="container">
-                    <div class="comment__content">
-                        <div class="comment__title">
-                            Что говорят о нас наши пациенты
-                        </div>
-                        <div class="comment__block">
-                            <div class="comment__image">
-                                <img src="img/comment.png" alt="">
-                            </div>
-                            <div class="comment__text">
-                                <div class="comment__name">
-                                    Сергей Иванович
-                                </div>
-                                <div class="comment__date">
-                                    26 ноября 2021
-                                </div>
-                                <div class="comment__des">
-                                    Хочу выразить большую благодарность поликлинике «Новая поликлиника»<br>
-                                    за профессионализм и качество работы. Вся семья лечится в этой<br> поликлинике и все очень довольны.
-                                </div>
-                            </div>
-                        </div>
+                <div class="about__block">
+                  <div class="blockAbout">
+                    <div class="blockAbout__image">
+                      <img src="img/customers.svg" alt="" />
                     </div>
+                    <div class="blockAbout__title">Тысячи клиентов</div>
+                    <div class="blockAbout__subtitle">
+                      Нашей поликлинике доверяет более<br />
+                      тысячи человек со всей страны
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </main>
-        <foooter class="footer">
-            <div class="container">
-                <div class="footer__content">
-                    <div class="footer__logo">
-                        <img src="img/Logo.svg" alt="">
-                       <p>Cеть современных<br> многопрофильных клиник</p>
+          </div>
+        </div>
+        <div class="services" id="services">
+          <div class="container">
+            <div class="services__content">
+              <div class="services__title">Наши услуги</div>
+              <div class="services__subtitle">
+                Вы можете проконсультироваться с врачом<br />
+                онлайн или же записаться на приём
+              </div>
+              <div class="services__cards">
+                <div class="services__card">
+                  <div class="card">
+                    <div class="card__img">
+                      <img src="img/neurology.svg" alt="" />
                     </div>
-                    <div class="footer__list">
-                        <ul>
-                            <li>ДЛЯ ПАЦИЕНТОВ</li>
-                            <li><a href="#">Вызов врача</a></li>
-                            <li><a href="#">Запись</a></li>
-                            <li><a href="#">Вызов врача</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__list">
-                        <ul>
-                            <li>О ПОЛИКЛИНИКЕ</li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Расписание</a></li>
-                            <li><a href="#">Услуги</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__list">
-                        <ul>
-                            <li>СЛУЖБА ПОДДЕРЖКИ</li>
-                            <li><a href="#">Соглашения</a></li>
-                            <li><a href="#">Сообщества</a></li>
-                            <li><a href="#">Связь с нами</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__subcribe">
-                        <div class="subcribe__title">Подписка</div>
-                        <div class="subcribe__subtitle">Получайте специальные<br> предложения и новости клиники</div>
-                        <div class="subcribe__email">
-                            <input type="email" name="" id=""placeholder="Email">
-                        </div>
-                    </div>
+                    <div class="card__title">Невролог</div>
+                  </div>
                 </div>
+                <div class="services__card">
+                  <div class="card">
+                    <div class="card__img">
+                      <img src="img/dernatology.svg" alt="" />
+                    </div>
+                    <div class="card__title">Дерматолог</div>
+                  </div>
+                </div>
+                <div class="services__card">
+                  <div class="card">
+                    <div class="card__img">
+                      <img src="img/dantist.svg" alt="" />
+                    </div>
+                    <div class="card__title">Стоматолог</div>
+                  </div>
+                </div>
+                <div class="services__card">
+                  <div class="card">
+                    <div class="card__img">
+                      <img src="img/urolog.svg" alt="" />
+                    </div>
+                    <div class="card__title">Уролог</div>
+                  </div>
+                </div>
+                <div class="services__card">
+                  <div class="card">
+                    <div class="card__img">
+                      <img src="img/oculist.svg" alt="" />
+                    </div>
+                    <div class="card__title">Окулист</div>
+                  </div>
+                </div>
+                <div class="services__card">
+                  <div class="card">
+                    <div class="card__img">
+                      <img src="img/Allergy.svg" alt="" />
+                    </div>
+                    <div class="card__title">Аллерголог</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </foooter>
-        <div class="copyright-bar">
-            <div class="container">
-                <div class="copyright-bar__content">
+          </div>
+        </div>
+        <div class="goal">
+          <div class="container">
+            <div class="goal__content">
+              <div class="goal__block">
+                <div class="goal__image">
+                  <img src="img/company.png" alt="" />
+                </div>
+                <div class="goal__text">
+                  <div class="goal__title">
+                    Наша цель в том чтобы сделать<br />
+                    медицину современной и удобной
+                  </div>
+                  <div class="goal__subtitle">
+                    Наша поликлиника имеет иновационные способы записи к<br />
+                    врачу и вызова врача на дом онлайн. Мы также<br />
+                    предоставляем возможность консультации с врачом по<br />
+                    видео звонку.
+                  </div>
+                </div>
+              </div>
+              <div class="goal__block">
+                <div class="goal__text">
+                  <div class="goal__title">Ценим каждого больного!</div>
+                  <div class="goal__subtitle">
+                    Определяющим принципом работы сотрудников Новой<br />
+                    поликлиники всегда был и остается высочайший<br />
+                    профессионализм и индивидуальный подход к каждому
+                    <br />пациенту.
+                  </div>
+                </div>
+                <div class="goal__image">
+                  <img src="img/Company 2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="container">
+            <div class="comment__content">
+              <div class="comment__title">Что говорят о нас наши пациенты</div>
+              <div class="comment__block">
+                <div class="comment__image">
+                  <img src="img/comment.png" alt="" />
+                </div>
+                <div class="comment__text">
+                  <div class="comment__name">Сергей Иванович</div>
+                  <div class="comment__date">26 ноября 2021</div>
+                  <div class="comment__des">
+                    Хочу выразить большую благодарность поликлинике «Новая
+                    поликлиника»<br />
+                    за профессионализм и качество работы. Вся семья лечится в
+                    этой<br />
+                    поликлинике и все очень довольны.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <foooter class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__logo">
+              <img src="img/Logo.svg" alt="" />
+              <p>
+                Cеть современных<br />
+                многопрофильных клиник
+              </p>
+            </div>
+            <div class="footer__list">
+              <ul>
+                <li>ДЛЯ ПАЦИЕНТОВ</li>
+                <li><a href="#">Вызов врача</a></li>
+                <li><a href="#">Запись</a></li>
+                <li><a href="#">Вызов врача</a></li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <ul>
+                <li>О ПОЛИКЛИНИКЕ</li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Услуги</a></li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <ul>
+                <li>СЛУЖБА ПОДДЕРЖКИ</li>
+                <li><a href="#">Соглашения</a></li>
+                <li><a href="#">Сообщества</a></li>
+                <li><a href="#">Связь с нами</a></li>
+              </ul>
+            </div>
+            <div class="footer__subcribe">
+              <div class="subcribe__title">Подписка</div>
+              <div class="subcribe__subtitle">
+                Получайте специальные<br />
+                предложения и новости клиники
+              </div>
+              <div class="subcribe__email">
+                <input type="email" name="" id="" placeholder="Email" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </foooter>
+      <div class="copyright-bar">
+        <div class="container">
+          <div class="copyright-bar__content">
             <div>Copyright © 2021 Новая поликлиника. Все права защищены.</div>
             <div>8 (800) 555-33-10</div>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
