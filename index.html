@@ -40,29 +40,34 @@
                                     <div class="block__title">
                                         Записаться к врачу
                                     </div>
-                                    <div class="block__inputs">
+                                    <div class="appointment__result" id="result"></div>
+                                    <div class="block__inputs" id="block">
                                     <div class="block__input">
-                                        <select>
+                                        <select id = "select">
                                             <option value="1">Выберите специалиста</option>
+                                            <option value="Стоматолог">Стоматолог</option>
+                                            <option value="Невролог">Невролог</option>
                                         </select>
                                     </div>
                                     <div class="block__input">
-                                        <input type="text" name="" id="" placeholder="Укажите номер телефона">
+                                        <input type="text" name="" id="tel" placeholder="Укажите номер телефона">
                                     </div>
                                     <div class="block__input">
-                                        <input type="text" name="" id="" placeholder="Укажите номер ОМС">
+                                        <input type="text" name="" id="med" placeholder="Укажите номер ОМС">
                                     </div>
                                     <div class="block__input">
-                                        <input type="date" name="" id="" placeholder="Дата записи">
+                                        <input type="date" name="" id="date" placeholder="Дата записи">
                                     </div>
                                     <div class="block__input">
-                                        <select>
-                                            <option value="">Время</option>
+                                        <select id="time">
+                                            <option value="1">Время</option>
+                                            <option value="12:00">12:00</option>
+                                            <option value="16:00">16:00</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="block__btn">
-                                    <button>Записаться</button>
+                                <div class="block__btn" id="button">
+                                    <button onclick="getValue()">Записаться</button>
                                     <a href="call.html">Вызвать врача</a>
                                 </div>
                                 </div>
@@ -307,5 +312,6 @@
         </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

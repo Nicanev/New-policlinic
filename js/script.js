@@ -14,6 +14,9 @@ function getValue() {
     else if (time.value == "1") {
         alert("Выберите время")
     }
+    else if (tel.value == "" || med.value=="" || date.value==""){
+        alert("Не все поля заполнены!");
+    }
     else {
         button.style.display="none";
         block.style.display ="none";

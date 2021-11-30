@@ -451,6 +451,12 @@ body {
   height: 570px;
 }
 
+@media screen and (max-width: 768px) {
+  .comment {
+    height: 750px;
+  }
+}
+
 .comment__title {
   text-align: center;
   font-weight: bold;
@@ -472,6 +478,12 @@ body {
   .comment__block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comment__text {
+    margin-top: 40px;
   }
 }
 
@@ -688,9 +700,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .appointment__btn button {
@@ -711,7 +723,10 @@ body {
 
 .appointment__result {
   display: none;
+  color: rgba(1, 4, 12, 0.9);
   white-space: pre-line;
+  margin-top: 10px;
+  line-height: 25px;
 }
 
 .call {
